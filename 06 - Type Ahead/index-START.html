@@ -21,7 +21,7 @@ const cities = [];
 
 fetch(endpoint)
   .then(blob => blob.json())
-  .then(data => cities.push(... data))
+  .then(data => cities.push(... data)) // spread syntax to create a single array
 //console.log(prom);
 
 function findMatches(worToMatch, cities){
